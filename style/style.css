@@ -334,3 +334,52 @@ section>.group_btn>a>button{
     top: -10px;
     left: -5px;
 }
+@media (max-width: 768px) {
+    /* Hides the hamburger menu icon */
+    .fa-bars {
+        display: none;
+    }
+
+    /* Shows the navigation list */
+    ul {
+        display: flex;
+        flex-direction: row; /* Arranges links horizontally */
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    ul li {
+        margin: 5px 8px; /* Adds space between the links */
+    }
+
+    /* Hides the search bar input */
+    #searchInput {
+        display: none;
+    }
+    
+    /* Corrects the search icon placement and size */
+    .search-box {
+        width: auto;
+        padding: 10px;
+    }
+
+    .search-icon {
+        position: static;
+        font-size: 1.2rem;
+    }
+    
+    /* General logo size adjustment */
+    .logo h1 {
+        font-size: 24px;
+    }
+    
+    /* Arranges the logo and search icon on the top line */
+    menu {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+    }
+}
