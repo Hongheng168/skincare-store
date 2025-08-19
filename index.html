@@ -1,0 +1,92 @@
+<!-- Index.html -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Skincare Store</title>
+</head>
+<body>
+    <main class="page">
+        <header>
+            <menu>
+                <div class="logo"><h1>Skincare Store</h1></div>
+                <label for="bar"><i class="fa-solid fa-bars"></i></label>
+                <input type="checkbox" id="bar">
+                <form id="searchForm">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" id="searchInput" placeholder="Search">
+                    </div>
+                </form>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product Type</a></li>
+                    <li><a href="#">Skin Type</a></li>
+                    <li>
+                        <a href="#" id="cart-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span id="cart-icon-quantity" class="cart-quantity">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </menu>
+        </header>
+        <aside>
+            <section id="slide1" class="slidebar">
+                <div class="content">
+                    <button>Can Order,
+                        <span style="color: BE9382;">Skincare</span>
+                    </button>
+                    <h2>Hurry! <br>We have alot of products for you </h2>
+                </div>
+                <div class="group_btn">
+                    <a href="#slide3"> <button><i class="fa-solid fa-angle-left"></i></button></a>
+                    <a href="#slide2"> <button><i class="fa-solid fa-angle-right"></i></button></a>
+                </div>
+            </section>
+            <section id="slide2" class="slidebar">
+                <div class="content">
+                    <button>You Can Choose,
+                        <span style="color: BE9382;">Skincare</span>
+                    </button>
+                    <h2>Find!!<br> The Product That Really Suits With Your Skin Type </h2>
+                </div>
+                <div class="group_btn">
+                    <a href="#slide1"> <button><i class="fa-solid fa-angle-left"></i></button></a>
+                    <a href="#slide3"> <button><i class="fa-solid fa-angle-right"></i></button></a>
+                </div>
+            </section>
+            <section id="slide3" class="slidebar">
+                <div class="content">
+                    <button>All Product Is For You,
+                        <span style="color: BE9382;">Skincare</span>
+                    </button>
+                    <h2>Hurry! <br>You Can Buy Every from Our Store </h2>
+                </div>
+                <div class="group_btn">
+                    <a href="#slide2"> <button><i class="fa-solid fa-angle-left"></i></button></a>
+                    <a href="#slide1"> <button><i class="fa-solid fa-angle-right"></i></button></a>
+                </div>
+            </section>
+        </aside>
+        <section id="products-container"></section>
+
+    </main>
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Your Shopping Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-summary">
+                <p>Total: <span id="total-price">$0.00</span></p>
+                <button id="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/card.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
