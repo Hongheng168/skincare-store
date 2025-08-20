@@ -1,4 +1,4 @@
-// cart.js
+// Cart.js
 
 let cart = [];
 
@@ -13,8 +13,8 @@ function addToCart(productId) {
         }
         console.log('Product added to cart:', product.name);
         console.log('Current Cart:', cart);
-        renderCart(); // Call to render cart items
-        updateCartIcon(); // Call to update cart icon
+        renderCart();
+        updateCartIcon();
     }
 }
 
@@ -39,7 +39,7 @@ function updateQuantity(productId, newQuantity) {
 
 function renderCart() {
     const cartItemsContainer = document.getElementById('cart-items');
-    cartItemsContainer.innerHTML = ''; // Clear existing items
+    cartItemsContainer.innerHTML = '';
     let totalPrice = 0;
 
     if (cart.length === 0) {
@@ -47,7 +47,6 @@ function renderCart() {
         document.getElementById('total-price').textContent = '$0.00';
         return;
     }
-
     cart.forEach(item => {
         const cartItem = document.createElement('div');
         cartItem.classList.add('cart-item');
@@ -70,8 +69,6 @@ function renderCart() {
 
     document.getElementById('total-price').textContent = `$${totalPrice.toFixed(2)}`;
 }
-
-// Event listeners for the cart popup
 document.getElementById('cart-modal').addEventListener('click', (event) => {
     const target = event.target;
     const productId = target.dataset.id;
@@ -85,11 +82,10 @@ document.getElementById('cart-modal').addEventListener('click', (event) => {
         }
     }
 });
-// Mock checkout function
 function checkout() {
     if (cart.length > 0) {
-        alert('Proceeding to checkout! Total: $' + document.getElementById('total-price').textContent);
-        cart = []; // Clear cart after checkout
+        alert('Proceeding to checkout! Total: ' + document.getElementById('total-price').textContent);
+        cart = [];
         renderCart();
         updateCartIcon();
     } else {

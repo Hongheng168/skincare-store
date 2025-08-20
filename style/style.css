@@ -21,7 +21,7 @@ menu{
     margin: auto;
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Added to vertically align all menu items */
+    align-items: center;
 }
 h1{
     font-family: "Dancing Script", cursive;
@@ -45,20 +45,19 @@ ul li a:focus{
     color: var(--mainColor)
 }
 
-/* New CSS for the Search Box */
 .search-box {
     position: relative;
     display: flex;
     align-items: center;
     border: 1px solid #ccc;
-    border-radius: 20px; /* Adjust for desired roundness */
-    padding: 8px 15px; /* Adjust padding as needed */
-    width: 500px; /* Set a fixed width for the search bar */
+    border-radius: 20px; 
+    padding: 8px 15px; 
+    width: 500px; 
 }
 
 .search-icon {
     position: absolute;
-    left: 15px; /* Adjust to position the icon */
+    left: 15px; 
     color: #888;
 }
 
@@ -66,7 +65,7 @@ ul li a:focus{
     width: 100%;
     border: none;
     outline: none;
-    padding-left: 30px; /* Add padding to leave space for the icon */
+    padding-left: 30px;
 }
 
 /* CSS for the cart icon */
@@ -91,7 +90,7 @@ aside{
     place-items: center;
     background-color: rgb(216, 206, 206);
     background-size: cover;
-    background-image: url(https://t4.ftcdn.net/jpg/16/40/26/89/360_F_1640268925_c4jcIXm8gOKIT8mlQzsizUUhvftH5tma.jpg);
+    background-image: url(https://www.getrael.com/cdn/shop/articles/December_Blog_Banners_Benefits_of_Organic_Skin_Care_Products.png?v=1641404707);
 }
 section>.content{
     width: 60%;
@@ -100,7 +99,7 @@ section>.content{
 }
 section>.content>h2{
     font-size: 3rem;
-    color: #5290D3;
+    color: #1565e5;
     font-family: "Dancing Script", cursive;
 }
 section>.content>button{
@@ -133,15 +132,15 @@ section>.group_btn>a>button{
     place-items: center;
 }
 #slide1{
-    background-image: url(https://t4.ftcdn.net/jpg/16/40/26/89/360_F_1640268925_c4jcIXm8gOKIT8mlQzsizUUhvftH5tma.jpg);
+    background-image: url(https://www.maxgreenalchemy.com/assets/images/blog/affordable-natural-skin-care.jpg);
     background-size: cover;
 }
 #slide2{
-    background-image: url(https://t3.ftcdn.net/jpg/07/60/17/96/360_F_760179672_E6DFoxYE57As4WDUi6xOrtJko1pwEZtK.jpg);
+    background-image: url(https://www.getrael.com/cdn/shop/articles/December_Blog_Banners_Benefits_of_Organic_Skin_Care_Products.png?v=1641404707);
     background-size: cover;
 }
 #slide3{
-    background-image: url(https://cdn.alittledelightful.com/wp-content/uploads/2024/06/Top-10-Beauty-Products-Starting-with-B-to-Elevate-Your-Look-.jpg);
+    background-image: url(https://images.everydayhealth.com/images/skin-beauty/what-are-natural-skin-care-products-alt-1440x810.jpg?sfvrsn=616dd3f2_5);
     background-size: cover;
 }
 :target{
@@ -154,7 +153,7 @@ section>.group_btn>a>button{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 50px;
-    background-color: #f8f8f8;
+    background-color: #f5dfdf77;
 }
 
 .product-card {
@@ -183,7 +182,7 @@ section>.group_btn>a>button{
 }
 
 .add-to-cart-btn {
-    background-color: #9d864b;
+    background-color: #ee724d;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -194,29 +193,27 @@ section>.group_btn>a>button{
 }
 
 .add-to-cart-btn:hover {
-    background-color: #7b6a38;
+    background-color: #ec4817;
 }
-/* Add to your existing styles */
 
 /* Modal (Cart Popup) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 2000; /* Sit on top of everything */
-    left: 0;
+    display: none; 
+    position: fixed; 
+    z-index: 2000; 
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4); 
 }
 
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto; /* 5% from the top and centered */
+    margin: 5% auto; 
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%; 
     max-width: 600px;
     border-radius: 8px;
     position: relative;
@@ -335,15 +332,13 @@ section>.group_btn>a>button{
     left: -5px;
 }
 @media (max-width: 768px) {
-    /* Hides the hamburger menu icon */
+
     .fa-bars {
         display: none;
     }
-
-    /* Shows the navigation list */
     ul {
         display: flex;
-        flex-direction: row; /* Arranges links horizontally */
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
@@ -351,15 +346,13 @@ section>.group_btn>a>button{
     }
     
     ul li {
-        margin: 5px 8px; /* Adds space between the links */
+        margin: 5px 8px; 
     }
 
-    /* Hides the search bar input */
     #searchInput {
         display: none;
     }
     
-    /* Corrects the search icon placement and size */
     .search-box {
         width: auto;
         padding: 10px;
@@ -370,12 +363,10 @@ section>.group_btn>a>button{
         font-size: 1.2rem;
     }
     
-    /* General logo size adjustment */
     .logo h1 {
         font-size: 24px;
     }
     
-    /* Arranges the logo and search icon on the top line */
     menu {
         flex-wrap: nowrap;
         justify-content: space-between;

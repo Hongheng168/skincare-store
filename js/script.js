@@ -1,7 +1,8 @@
+//Scrpt.js
 // Function to render products on the page
 function renderProducts() {
     const productsContainer = document.getElementById('products-container');
-    productsContainer.innerHTML = ''; // Clear existing products
+    productsContainer.innerHTML = '';
     products.forEach(product => {
         const productCard = document.createElement('div');
         productCard.classList.add('product-card');
@@ -15,10 +16,8 @@ function renderProducts() {
     });
 }
 
-// Call the function when the page loads
+// Call the function and Add event listener
 document.addEventListener('DOMContentLoaded', renderProducts);
-
-// Add event listener to the products container
 document.getElementById('products-container').addEventListener('click', (event) => {
     if (event.target.classList.contains('add-to-cart-btn')) {
         const productId = event.target.dataset.id;
@@ -26,29 +25,26 @@ document.getElementById('products-container').addEventListener('click', (event) 
     }
 });
 
-// Update the cart icon with the number of items
+// Update the cart
 function updateCartIcon() {
     const cartIcon = document.getElementById('cart-icon-quantity');
     const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
     cartIcon.textContent = totalItems;
 }
-
-// --- Event Listeners for Cart Modal ---
-
 // Get modal, buttons, and other elements
 const cartModal = document.getElementById('cart-modal');
 const cartIcon = document.getElementById('cart-icon');
 const closeBtn = document.querySelector('.close-btn');
 const checkoutBtn = document.getElementById('checkout-btn');
 
-// When the user clicks the cart icon, open the modal and render cart items
+//open the modal and render cart items
 cartIcon.addEventListener('click', (event) => {
-    event.preventDefault(); // Prevents the link from navigating
+    event.preventDefault();
     cartModal.style.display = 'block';
-    renderCart(); // This function should be in your cart.js
+    renderCart();
 });
 
-// When the user clicks on <span> (x), close the modal
+//close the modal
 closeBtn.addEventListener('click', () => {
     cartModal.style.display = 'none';
 });
@@ -62,5 +58,5 @@ window.addEventListener('click', (event) => {
 
 // When the user clicks the checkout button
 checkoutBtn.addEventListener('click', () => {
-    checkout(); // This function should also be in your cart.js
+    checkout();
 });
