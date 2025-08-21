@@ -10,7 +10,7 @@ const products = [
     {
         id: 2,
         name: 'Vitamin C Serum',
-        price: 8.59,
+        price: 8.99,
         image: 'https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/f/8/f8c4ddfHIMAL00000136_1.jpg',
         description: 'Brightens skin tone and reduces signs of aging.'
     },
@@ -103,6 +103,41 @@ const products = [
         name: 'Garnier Super UV',
         price: 11.11,
         image: 'https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/b/d/bd8a5beGARNI00000239-1.jpg',
+        description: 'A gentle cleanser that deeply hydrates the skin.'
+    },
+    {
+        id: 16,
+        name: 'Renewal Gel Mask',
+        price: 11.11,
+        image: 'https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/a/4/a406b47IBAHA00000120_1.jpg',
+        description: 'A gentle cleanser that deeply hydrates the skin.'
+    },
+    {
+        id: 17,
+        name: 'Hydrogel Mask',
+        price: 11.11,
+        image: 'https://images-static.nykaa.com/media/catalog/product/6/6/661b6138803463007416.jpg',
+        description: 'A gentle cleanser that deeply hydrates the skin.'
+    },
+    {
+        id: 18,
+        name: 'Facialist Mask ',
+        price: 11.11,
+        image: 'https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/a/d/ad171448906060219395_1.jpg',
+        description: 'A gentle cleanser that deeply hydrates the skin.'
+    },
+    {
+        id: 19,
+        name: 'Lakme Skin Mask',
+        price: 11.11,
+        image: 'https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/a/b/ab8e55127669_H-8901030943584.jpg',
+        description: 'A gentle cleanser that deeply hydrates the skin.'
+    },
+    {
+        id: 20,
+        name: 'Glow Sleeping Mask',
+        price: 11.11,
+        image: 'https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/a/4/a406b47IBAHA00000073_1.jpg',
         description: 'A gentle cleanser that deeply hydrates the skin.'
     },
     
